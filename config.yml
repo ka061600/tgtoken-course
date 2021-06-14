@@ -1,0 +1,16 @@
+title: TGtoken
+description: 创建一枚世界杯足球⚽️代币！让世界热爱足球运动都能带动一股热潮
+template:
+  repo: tgtoken-template
+  name: tgtoken
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
